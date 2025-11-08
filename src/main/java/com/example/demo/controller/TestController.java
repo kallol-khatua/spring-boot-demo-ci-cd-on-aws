@@ -10,16 +10,16 @@ public class TestController {
 
     @GetMapping("/first")
     public String first() {
-        return "first route update - 2";
+        return "first route update - 3";
     }
 
     @GetMapping("/second")
     public String second() {
-        return "second route update - 2";
+        return "second route update - 3";
     }
 
     @GetMapping("/third")
     public String third() {
-        return "third route update - 2";
+        return "third route update - 3";
     }
 }
