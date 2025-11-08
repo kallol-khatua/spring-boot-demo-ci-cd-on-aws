@@ -53,6 +53,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>spring-boot-demo-ci-cd-on-aws</finalName>
 	</build>
 
 </project>

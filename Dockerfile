@@ -24,7 +24,7 @@ RUN apk add --no-cache curl
 WORKDIR /app
 
 # Copy the JAR and any extra resources
-COPY --from=build /build/target/demo-0.0.1-SNAPSHOT.jar ./demo.jar
+COPY --from=build /build/target/spring-boot-demo-ci-cd-on-aws.jar ./spring-boot-demo-ci-cd-on-aws.jar
 
 # (Optional) copy any resources, configs, or static files
 # COPY --from=build /build/path/to/resource ./resource
@@ -40,5 +40,5 @@ RUN adduser -D spring
 USER spring
 
 # Set entrypoint
-ENTRYPOINT ["java", "-jar", "/app/demo.jar"]
+ENTRYPOINT ["java", "-jar", "/app/spring-boot-demo-ci-cd-on-aws.jar"]
 
